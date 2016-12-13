@@ -1,5 +1,6 @@
 FROM php:7.0-fpm-alpine
 
+RUN apk add  --update --no-cache curl-dev libcurl libpng-dev
 RUN docker-php-ext-install ctype gd iconv pdo pdo_mysql mysqli
 
 RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
