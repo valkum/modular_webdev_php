@@ -1,4 +1,4 @@
-FROM php:5.6-fpm-alpine
+FROM php:5.5-fpm-alpine
 
 RUN apk add  --update --no-cache curl-dev libcurl libpng-dev
 RUN docker-php-ext-install ctype gd iconv pdo pdo_mysql mysqli
