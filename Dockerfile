@@ -1,6 +1,6 @@
 FROM php:5.6-fpm
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install curl-dev libcurl libpng-dev locales
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install libcurl-dev libpng-dev locales
 RUN docker-php-ext-install ctype gd iconv pdo pdo_mysql mysqli intl
 
 RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
