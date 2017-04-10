@@ -12,7 +12,7 @@ RUN locale-gen zh_CN.UTF-8
 RUN locale-gen pt_PT.UTF-8 
 
 
-ADD app.ini /usr/local/etc/php/conf.d/
+ADD zz_app.ini /usr/local/etc/php/conf.d/
 
 ADD app.pool.conf /usr/local/etc/php-fpm.d/
 
